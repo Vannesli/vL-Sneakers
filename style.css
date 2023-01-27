@@ -1,0 +1,531 @@
+html,
+body{
+    margin:0;
+    height: 100%;
+    padding:0;
+    background-color: #ffffff;
+}
+nav{
+    overflow: hidden;
+    width: 100%;
+    background: #ffffff;
+    position:absolute;
+    top: 0;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 0 2px 4px 0 #5C5C5C;
+}
+nav .Logo{
+    padding-top:20px;
+    width:30%;
+    left:-35px;
+    position: relative;
+    top: -18px;
+    cursor: pointer;
+}
+
+nav .Logo img{
+    padding-top:20px;
+    width: 200px;
+    height: 70px;
+}
+
+ul{
+    padding-top:25px;
+    font-size:large;
+}
+
+nav li{
+    display:inline;
+}
+
+nav a{
+    text-decoration: none;
+    color:black;
+    font-family: Arial;
+    padding:10px;
+    font-weight: bold;
+    transition: 0.15s;
+}
+nav a:hover{
+    background-color: lightgrey;
+    color:black;
+    border-radius: 5px;
+}
+#nav-button{
+    display: none;
+}
+label{
+    display: none;
+}
+
+@media only screen and (max-width: 736px) and (orientation: portrait) {
+
+    nav {
+        align-items: center;
+    }
+
+    nav .Logo {
+        width: 30%;
+        position: absolute;
+        left: 0px;
+    }
+
+    nav .Logo img {
+        padding-top: 20px;
+    }
+
+    nav ul {
+        position:fixed;
+        top: -20px;
+        width: 100%;
+        background-color:#ffffff;
+        max-height: 0;
+        overflow: hidden;
+    }
+
+    nav li {
+        display: block;
+        width: 100%;
+        padding: 5px;
+    }
+
+    nav a {
+        width: 100%;
+        display: block;
+    }
+
+    nav li:hover {
+        background:#ffffff;
+    }
+
+    label {
+        display: block;
+        padding: 0px 10px;
+        font-size: 30px;
+        cursor: pointer;
+        position: absolute;
+        right: 2%;
+    }
+
+    label:hover {
+        color: white;
+    }
+
+    nav #nav-button:checked~ul {
+        max-height: 100%;
+        transition: all 1s ease-out;
+    }
+}
+
+/* Start Isi */
+marquee{
+    color:white;
+    display: flex;
+    margin:auto;
+    padding-top: 120px;
+    padding-bottom: 10px;
+    font-size: 50px;
+    font-family: Arial;
+    font-style: italic;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+}
+.Inner{
+    padding-top: 10px;
+    padding-bottom: 35px;
+    width: fit-content;
+    margin: auto;
+    height:auto;
+    background-color: white;
+}
+.row{
+    background-color: white;
+    display:flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    max-height: fit-content;
+
+}
+h1{
+    padding-top: 30px;
+    padding-left: 30px;
+    color: #ffffff;
+    font-family: Arial;
+}
+p{
+    padding-left: 30px;
+    color: #ffffff;
+    font-family: Arial;
+}
+.col-6{
+    background: black;
+    height: fit-content;
+}
+.col-6 > img{
+    width: 1500px;
+    height: 100%;
+}
+/*End Inner 1*/
+
+/* Start Inner 2 */
+.Inner2{
+    padding-top: 35px;
+    padding-bottom: 35px;
+    display: flex;
+    margin: auto;
+    width: fit-content;
+    height:auto;
+    background-color: white;
+}
+.gridText-center{
+    background-color: #555;
+    display: flex;
+    flex-direction:row;
+}
+
+.card-title{
+    color: black;
+}
+.card-text{
+    color: black;
+    text-align: justify;
+}
+.btn-buy{
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.btn-buy > button{
+    width: 300px;
+    height: 70px;
+    font-family: Arial;
+    font-size: 1.2em;
+    font-weight:bolder;
+    border-radius: 30px;
+    cursor: pointer;
+    background-color: #555;
+    color: #ffffff;
+    box-shadow: 0 9px #5C5C5C;
+}
+.btn-buy > button:hover{
+    background-color: lightgrey;
+    width: 320px;
+    height: 80px;
+    color:black;
+}
+.btn-buy > button:active{
+    background-color: lightgrey;
+    box-shadow: 0 5px #5C5C5C;
+    transform: translateY(4px);
+    color: #ffffff;
+}
+.Flashsaleweek{
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    display: flex;
+}
+.h1_fsw{
+    color: black;
+    background-color: lightcoral;
+    border-radius: 20px;
+    padding:20px;
+    
+}
+/* End Inner 2 */
+
+/* Start Category 2 */
+.grid_category{
+    display: flex;
+    gap:50px;
+    padding-top: 50px;
+    padding-bottom:50px;
+    margin: auto;
+    justify-content: center;
+}
+.category1{
+    background-color: lightsteelblue;
+    border-radius: 50px;
+    width: 300px;
+    height: 250px;
+    display: flex;
+}
+.category1:hover{
+    background-color: lightgrey;
+    width: 400px;
+    -webkit-transform: rotate(0deg) translateZ(0);
+    cursor: pointer;
+}
+.category1:active{
+    background-color: lightgrey;
+    box-shadow: 10px 10px #5C5C5C;
+    transform: translateY(10px);
+}
+.category1 > img:hover{
+    padding: 10px 70px;
+    transition-duration: 0.1s;
+    -webkit-transform: rotate(30deg) translateZ(0);
+}
+.category1 > img{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    height: auto;
+    padding-top: 70px;
+}
+.category2{
+    background-color: lightcoral;
+    width: 300px;
+    height: 250px;
+    display: flex;
+    border-radius: 50px;
+}
+.category2:hover{
+    background-color: lightgrey;
+    width: 400px;
+    -webkit-transform: rotate(0deg) translateZ(0);
+    cursor: pointer;
+}
+.category2:active{
+    background-color: lightgrey;
+    box-shadow: 10px 10px #5C5C5C;
+    transform: translateY(10px);
+}
+.category2 > img:hover{
+    padding: 0px 180px 100px 40px;
+    transition-duration: 0.1s;
+    -webkit-transform: rotate(30deg) translateZ(0);
+}
+.category2 > img{
+    width: 500px;
+    height: 308px;
+}
+.category3{
+    background-color: burlywood;
+    width: 300px;
+    height: 250px;
+    border-radius: 50px;
+    display: flex;
+}
+.category3:hover{
+    background-color: lightgrey;
+    width: 400px;
+    -webkit-transform: rotate(0deg) translateZ(0);
+}
+.category3:active{
+    background-color: lightgrey;
+    box-shadow: 10px 10px #5C5C5C;
+    transform: translateY(10px);
+}
+.category3 > img:hover{
+    padding: 50px 180px 50px 90px;
+    transition-duration: 0.1s;
+    -webkit-transform: rotate(30deg) translateZ(0);
+    cursor: pointer;
+}
+.category3 > img{
+    display: flex;
+    justify-content: center;
+    width: 400px;
+    height: 218px;
+    padding-left: 20px;
+    padding-top: 45px;
+}
+.category4{
+    background-color: gray;
+    width: 300px;
+    height: 250px;
+    display: flex;
+    border-radius: 50px;
+}
+.category4:hover{
+    background-color: lightgrey;
+    width: 400px;
+    -webkit-transform: rotate(0deg) translateZ(0);
+    cursor: pointer;
+}
+.category4:active{
+    background-color: lightgrey;
+    box-shadow: 10px 10px #5C5C5C;
+    transform: translateY(10px);
+}
+.category4 > img:hover{
+    padding: 0px 10px 0px 50px;
+    transition-duration: 0.1s;
+    -webkit-transform: rotate(30deg) translateZ(0);
+}
+.category4 > img{
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    padding-top: 30px;
+    width: 260px;
+    height:268px;
+}
+.nextcategory > a{
+    text-decoration: none;
+    color: black;
+    font-family: Arial;
+    font-size: large;
+}
+/* End Category 2 */
+
+/* Start Video Advertisement */
+.video_ads{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+video{
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    width: 1800px;
+}
+/* End Video Advertisement */
+/* END NIKE BRAND */
+
+.blank_brand{
+    background-color: black;
+    width: 100%;
+    height: 10px;
+}
+/* START ADDIDAS BRAND */
+/* START ADDIDAS BROSUR */
+.addidas_brosur{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    max-width: 2000px;
+    padding-bottom: 50px;
+    padding-top:50px;
+}
+.addidas_brosur > img{
+    width: 1800px;
+}
+/* Start Carousels */
+.carousel-item{
+    display: flex;
+    justify-content: center;
+    width: 1000px;
+    height: 400px;
+    margin: auto;
+    align-items: center;
+    background-image: url("https://rare-gallery.com/uploads/posts/585867-Adidas-Yeezy.jpg");
+    background-size: 650px;
+    background-position: center;
+    border-radius: 50px;
+}
+.carousel-item:hover{
+    width: 1030px;
+    height: 410px;
+    cursor: pointer;
+}
+.carousel-item:active{
+    transform: translateY(10px);
+}
+.img{
+    position:absolute;
+    opacity: 0;
+    width: 15%;
+    height: auto;
+    transition: 0.5s;
+    background-color: ;
+    aspect-ratio: 3/2;
+    object-fit: contain;
+}
+.img-1{
+    width: 800px;
+}
+.img-2{
+    width: 1000px;
+    padding-top: 100px;
+    padding-right:20px;
+}
+.img-3{
+    width: 670px;
+    padding-top:120px;
+    padding-right:40px;
+}
+.show{
+    opacity: 1;
+}
+/* End Carousels */
+
+/* Start Footer */
+.blank{
+    background-color: #ffffff;
+    padding-top: 100px;
+}
+.Footer{
+    background-color: black;
+    height: auto;
+    bottom: 0;
+    position:relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.Footer > img{
+}
+.Logo_Sosmed{
+    width:100%;
+    height: 100%;
+    display:flex;
+    justify-content: center;
+    margin: auto;
+    gap: 10px;
+    padding-bottom: 10px;
+}
+.Logo_Sosmed > a{
+
+}
+.Logo_Sosmed > a > img{
+    width: 30px;
+
+}
+.EndFooterText{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+}
+.EndFooterText > img{
+    padding-top: 30px;
+    width: 250px;
+}
+.p_footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    width: fit-content;
+    padding-right: 30px;
+}
+.copyright{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.h1_copyright{
+    font-family: Arial;
+    font-size: 1.4em;
+    font-weight:100;
+    padding-top: 50px;
+}
